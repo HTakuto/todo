@@ -52,4 +52,10 @@ class TasksController extends Controller
 
         return redirect()->route('tasks.index');
     }
+
+    public function delete($id)
+    {
+        $task = Task::destroy($id);
+        return redirect()->route('tasks.index');
+    }
 }
