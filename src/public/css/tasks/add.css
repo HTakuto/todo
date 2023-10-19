@@ -3,6 +3,12 @@
         text-align: center;
         padding: 30px;
     }
+    .error {
+        text-align: center;
+    }
+    .error__message {
+        color: red;
+    }
     .form {
         width: 80%;
         margin: 0 auto;
