@@ -9,6 +9,11 @@
 </head>
 <body>
     <h1>タスク追加</h1>
+    <div class="error">
+        @foreach ($errors->all() as $error)
+          <p class="error__message">{{$error}}</p>
+        @endforeach
+    </div>
     <form action="{{ route('tasks.store') }}" method="POST" class="form">
     @csrf
         <div class="form-group">
