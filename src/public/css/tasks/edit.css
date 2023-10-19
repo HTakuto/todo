@@ -1,0 +1,30 @@
+<style>
+    h1 {
+        text-align: center;
+        padding: 30px;
+    }
+    .error {
+        text-align: center;
+    }
+    .error__message {
+        color: red;
+    }
+    .form {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .form-group {
+        padding-bottom: 50px;
+    }
+    span {
+        color: red;
+    }
+    input {
+        width: 60%;
+        height: 30px;
+    }
+    textarea {
+        width: 60%;
+    }
+</style>
