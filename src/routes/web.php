@@ -15,3 +15,4 @@ use App\Http\Controllers\TasksController;
 */
 
 Route::get('/', [TasksController::class, 'index'])->name('tasks.index');
+Route::get('/{id}', [TasksController::class, 'show'])->name('tasks.show');
