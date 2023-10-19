@@ -20,11 +20,14 @@
             </tr>
             @foreach ($tasks as $task)
             <tr>
-                <td>{{ $task->name }}</td>
-                <td>
+                <td class="td1">{{ $task->name }}</td>
+                <td class="td2">
                     <a href="{{ route('tasks.show', ['id' => $task->id]) }}">詳細</a>
                     <a href="{{ route('tasks.edit', ['id' => $task->id]) }}">編集</a>
-                    <a href="">削除</a>
+                    <form action="{{ route('tasks.delete', ['id' => $task->id]) }}" method="POST" name="deleteForm">
+                        @csrf
+                        <button type="submit">削除</button>
+                    </form>
                 </td>
             </tr>
             @endforeach
